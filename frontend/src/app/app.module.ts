@@ -11,14 +11,24 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component';
+import { ClockComponent } from './views/clock/clock.component';
+import { MatButtonModule } from '@angular/material/button';
+import { CounterComponent } from './views/counter/counter.component';
+import { PomodoroWatchComponent } from './views/pomodoro-watch/pomodoro-watch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    ClockComponent,
+    CounterComponent,
+    PomodoroWatchComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +36,9 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
